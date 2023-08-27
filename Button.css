@@ -1,0 +1,46 @@
+
+body {
+  background-color: #f0f0f0; /* Default background color */
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button img {
+  height: 20px;
+  width: 20px;
+  transition: transform 0.3s ease; /* Smooth transition for icon rotation */
+}
+
+.dark-mode img {
+  transform: rotate(0deg); /* Rotate icon for dark mode */
+}
+
+.light-mode img {
+  transform: rotate(0deg); /* Reset rotation for light mode */
+}
+
+/* Style for dark mode */
+.dark-mode button {
+  color: white;
+}
+
+/* Style for light mode */
+.light-mode button {
+  color: black;
+}
+
+/* Apply dark mode styles to body */
+.dark-mode body {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+/* Apply light mode styles to body */
+.light-mode body {
+  background-color: #f0f0f0;
+  color: black;
+}
